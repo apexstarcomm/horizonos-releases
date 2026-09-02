@@ -1,80 +1,69 @@
 # HorizonOS
 
-A desktop overlay application for Star Citizen providing real-time navigation, communication, and tools.
+A companion interface for Star Citizen. An **agent** runs on the machine
+with the game on it — tailing `Game.log`, watching the clipboard for
+`/showlocation` coordinates, holding your UCI (Aegis) session, and owning
+the microphone and headset for voice. An **interface** draws all of that,
+and doesn't have to run on the same machine.
+
+This repo hosts built installers and release notes only. The source lives
+in a private repository.
 
 ## Download
 
-### Latest Stable Release
+### Stable
 
-[![Latest Release](https://img.shields.io/github/v/release/apexinterstellar/horizonos-releases?label=stable&style=for-the-badge)](https://github.com/apexinterstellar/horizonos-releases/releases/latest)
+[![Latest stable release](https://img.shields.io/github/v/release/apexstarcomm/horizonos-releases?label=stable&style=for-the-badge)](https://github.com/apexstarcomm/horizonos-releases/releases/latest)
 
-Download `HorizonOS-Setup.exe` from the [latest release](https://github.com/apexinterstellar/horizonos-releases/releases/latest).
+### PTB (Public Test Build)
 
-### Beta Releases
+[![Latest PTB release](https://img.shields.io/github/v/release/apexstarcomm/horizonos-releases?include_prereleases&label=PTB&style=for-the-badge)](https://github.com/apexstarcomm/horizonos-releases/releases)
 
-[![Beta Release](https://img.shields.io/github/v/release/apexinterstellar/horizonos-releases?include_prereleases&label=beta&style=for-the-badge)](https://github.com/apexinterstellar/horizonos-releases/releases)
+Stable and PTB install side by side under separate names, so running one
+never disturbs the other. PTB gets new features first, in exchange for
+occasional rough edges.
 
-Want early access to new features? Download the latest pre-release version.
+## Installing
 
-## Installation
+1. Download the installer `.exe` from a release above.
+2. Run it — no administrator rights needed, it installs to your own user
+   profile.
+3. Launch it from the Start Menu.
 
-1. Download `HorizonOS-Setup.exe`
-2. Run the installer (no admin required)
-3. HorizonOS installs to `%LocalAppData%\HorizonOS`
-4. Launch from Start Menu or desktop shortcut
+## What's inside
 
-## Auto-Updates
+- **Atlas** — real-time navigation: your live position and system, a
+  zoomable star map with terrain and water overlays, distance measuring,
+  and quick search across systems, bodies, and points of interest.
+- **Radio** — encrypted, frequency-based voice comms, scoped per star
+  system.
+- Sign-in is a one-time UCI (Aegis) device-code login that covers every
+  device you pair afterward.
 
-HorizonOS automatically checks for updates on startup. When an update is available:
+## Two ways to run it
 
-- You'll see a notification in the app
-- Updates download in the background
-- Restart to apply the update
+- **One machine.** Install HorizonOS on the same PC as Star Citizen — it
+  runs as both the agent and the interface together.
+- **Two machines.** Run the agent on the gaming PC and the interface
+  anywhere else on your LAN — a laptop, a tablet's browser, a second
+  monitor. They pair over a one-time 6-digit code, entered once per
+  device.
 
-You can also manually check for updates in **Settings → Updates**.
+## Auto-updates
 
-### Update Channels
+Both channels can check for and install updates from this repo, signed
+against a key kept out of the source tree entirely. If a build doesn't
+prompt you for a newer version yet, grabbing the latest installer above
+always works too.
 
-| Channel | Description |
-|---------|-------------|
-| **Stable** | Production-ready releases (default) |
-| **Beta** | Early access to new features, may have bugs |
+## System requirements
 
-Switch channels in **Settings → Updates → Channel**.
+- Windows 10/11, 64-bit
+- Microsoft Edge WebView2 Runtime (already present on most up-to-date
+  Windows installs — the installer will ask if it's missing)
 
-## System Requirements
+## Status
 
-- Windows 10/11 (64-bit)
-- .NET 10.0 Runtime (included in installer)
-- ~100 MB disk space
-
-## Features
-
-- **Atlas** - Navigation and mapping with real-time coordinates
-- **Link** - Radio communication system
-- **Overlay** - Transparent HUD that works with Star Citizen
-
-## Support
-
-- [Documentation](https://apexinterstellar.space/horizonos/docs)
-- [Discord Community](https://discord.gg/yHFEjcmnaB)
-- [Report Issues](https://github.com/apexinterstellar/horizonos-releases/issues)
-
-## Portable Mode
-
-To run HorizonOS in portable mode (no installation):
-
-1. Download `HorizonOS-Portable.zip`
-2. Extract to any folder
-3. Create an empty file named `horizonos.portable` in the same folder
-4. Run `HorizonOS.exe`
-
-Data will be stored in a `data` subfolder instead of AppData.
-
----
-
-<p align="center">
-  <b>Apex Interstellar</b><br>
-  <a href="https://discord.gg/yHFEjcmnaB">Discord</a> •
-  <a href="https://apexinterstellar.space/horizonos/docs">Docs</a>
-</p>
+HorizonOS is early and under active development, especially on the PTB
+channel — expect rough edges. [Open an issue](https://github.com/apexstarcomm/horizonos-releases/issues)
+if something breaks.
