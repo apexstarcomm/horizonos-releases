@@ -23,6 +23,9 @@ Stable and PTB install side by side under separate names, so running one
 never disturbs the other. PTB gets new features first, in exchange for
 occasional rough edges.
 
+What changed in each build is in [CHANGELOG.md](CHANGELOG.md), and on the
+update screen in the app when a build is offered.
+
 ## Installing
 
 1. Download the installer `.exe` from a release above.
