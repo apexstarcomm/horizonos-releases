@@ -3,6 +3,10 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.1.11-ptb.35 — 2026-09-11
+
+- No changes for players. Release bookkeeping only.
+
 ## 0.1.10-ptb.34 — 2026-09-11
 
 - No changes for players. A fix to how release notes are published, and the first build to prove it end to end.
