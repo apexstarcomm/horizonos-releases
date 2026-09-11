@@ -3,6 +3,10 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.1.10-ptb.34 — 2026-09-11
+
+- No changes for players. A fix to how release notes are published, and the first build to prove it end to end.
+
 ## 0.1.9-ptb.33 — 2026-09-11
 
 - The update screen now tells you what a new build changes, and every build's notes are collected at github.com/apexstarcomm/horizonos-releases/blob/main/CHANGELOG.md.
