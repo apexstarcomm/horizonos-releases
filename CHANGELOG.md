@@ -53,7 +53,7 @@ same notes appear on the update screen in the app when a build is offered.
 ## 0.1.3-ptb.26 — 2026-09-07
 
 - Radio voice is high quality only now — full-band, with your voice isolated from the room before it leaves your machine — and there's an Audio page in Settings for the input and output device, gain, volume, voice isolation and a mic test.
-- Voice goes through Logos at link.apexstarcomm.space by default on new installs.
+- Voice goes through Link Protocol at link.apexstarcomm.space by default on new installs.
 - On Linux, /showlocation is read from the Wayland clipboard too.
 
 ## 0.1.2-ptb.25 — 2026-09-03
