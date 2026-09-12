@@ -3,6 +3,10 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.1.14-ptb.38 — 2026-09-12
+
+- Keeps the Blueprints screen working with Atlas's new item catalogue, which now comes from the game files and grades items with a number instead of a letter.
+
 ## 0.1.13-ptb.37 — 2026-09-12
 
 - New Blueprints screen: search the game's 1,608 blueprints, open any of them to see which contracts or reputation tiers award it (with the odds), what it costs to craft, and whether you already hold it. Filter by held / not yet and by whether a mission is known to award it.
