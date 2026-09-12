@@ -3,6 +3,10 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.1.12-ptb.36 — 2026-09-12
+
+- Voice settings say "Link Protocol", the name you know it by, instead of an internal one.
+
 ## 0.1.11-ptb.35 — 2026-09-11
 
 - No changes for players. Release bookkeeping only.
