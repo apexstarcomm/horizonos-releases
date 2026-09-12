@@ -3,6 +3,11 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.1.13-ptb.37 — 2026-09-12
+
+- New Blueprints screen: search the game's 1,608 blueprints, open any of them to see which contracts or reputation tiers award it (with the odds), what it costs to craft, and whether you already hold it. Filter by held / not yet and by whether a mission is known to award it.
+- The agent now passes the game's on-screen notifications to Atlas, which records the blueprints you receive in game — that is what the Blueprints screen's "earned" marks come from. Blueprints you already received are picked up from your existing game log the first time the new agent runs. You can also mark one by hand.
+
 ## 0.1.12-ptb.36 — 2026-09-12
 
 - Voice settings say "Link Protocol", the name you know it by, instead of an internal one.
