@@ -3,6 +3,18 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.1.15-ptb.2 — 2026-09-13
+
+- The push-to-talk key the agent watches on the game PC can now be set from Settings › Connection on any paired device: click the key and press the one you want, or pick it from a list, and choose hold or toggle. It is saved on the agent and takes effect right away, so every device paired to it sees the same key.
+- Mouse side buttons (Mouse4 and Mouse5) can now be the agent's push-to-talk key.
+- The -PttKey, --ptt-key and HORIZONOS_PTT_KEY options now only set the key the first time the agent runs; after that the key saved on the agent is the one that counts.
+- Changing the push-to-talk key or its mode while transmitting ends that transmission.
+- You can now report on where you are. A REPORT button in the header opens a sheet for the nearest catalogued place: say whether it is still there, closed or gone, and confirm or correct its landing pad count, hangars, armistice zone and services; every report is dated by your /showlocation fix. The same sheet shows what other players have reported so far, and flags a value the game's files have since moved away from.
+- You can propose a place the catalogue does not carry, from your current fix: a name, a category and an optional description. A reviewer accepts proposals by hand, and the sheet tells you when a catalogued place already sits within a kilometre.
+- Buying at a kiosk now reports the price the kiosk quoted, on its own: the agent forwards the game's own shop line to Atlas, which turns it into a community price on that terminal. Your own name is blanked before the line leaves the game PC, and the agent reads nothing else out of it.
+- The report sheet now offers everything your fix names — the system, the body and the nearest place — and the same sheet opens from a blueprint's page, from each contract that awards it (the ones the game gives no title can be given one) and from a ship's page, for whatever Atlas takes reports on there: a description, a body's designation, a ship's role, a note on a recipe.
+- Both report controls follow the Contribute setting under Settings › Data & honesty; turn it off and they disappear.
+
 ## 0.1.15-ptb.1 — 2026-09-13
 
 - A blueprint the game gives no display name shows its internal key, marked as such, instead of a placeholder string.
