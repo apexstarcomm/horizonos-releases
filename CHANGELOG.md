@@ -3,6 +3,15 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.1.15-ptb.1 — 2026-09-13
+
+- A blueprint the game gives no display name shows its internal key, marked as such, instead of a placeholder string.
+- Distance is audible now. A station a few gigameters away arrives with a faint static under the voice; ten out, the band narrows and the static rises; past twenty, the voice breaks up in dropouts and flutter; near the 40 Gm horizon it is fragments under the noise. Under 1.26 Gm it is exactly what they sent. This follows the Link Protocol's own coherence model, the same one that drives the signal meter.
+- Each radio's meter now shows how far away the station it is hearing is, worked back from the coherence score — "degraded 42% · ≈ 10 Gm".
+- Range is only scored between two stations that have both run /showlocation. When that isn't the case the meter reads "no fix" instead of a misleading "degraded 75%", the voice plays clean, and the Radio screen says to run /showlocation.
+- Powered radios carry a faint receiver hiss between transmissions, and a short squelch tail when a station unkeys, so a live channel no longer sounds like a dead speaker. Both follow the radio's own volume and ear, not its squelch.
+- Settings › Audio has a "Link range effects" switch for all of the above. Off, every transmission plays clean and the radios are silent between them; the meter still shows the zone.
+
 ## 0.1.14-ptb.38 — 2026-09-12
 
 - Keeps the Blueprints screen working with Atlas's new item catalogue, which now comes from the game files and grades items with a number instead of a letter.
