@@ -3,6 +3,10 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.1.15-ptb.4 — 2026-09-15
+
+- Blueprint categories are named in plain words: the filter chips, the catalogue rows and a blueprint's page say "Armor" or "Vehicle weapons · size 3" where they showed the game's own codes. The names come from Atlas, so a category the game adds later reads properly without an app update.
+
 ## 0.1.15-ptb.3 — 2026-09-15
 
 - Distance now sounds like a digital link failing, not a radio hissing: past a gigameter the voice narrows and loses resolution, further out packets go missing and frames stutter, and under 1.26 Gm it is exactly what was sent. Nothing plays between transmissions any more — the receiver hiss and the squelch tail are gone.
