@@ -3,6 +3,15 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.1.15-ptb.3 — 2026-09-15
+
+- Distance now sounds like a digital link failing, not a radio hissing: past a gigameter the voice narrows and loses resolution, further out packets go missing and frames stutter, and under 1.26 Gm it is exactly what was sent. Nothing plays between transmissions any more — the receiver hiss and the squelch tail are gone.
+- A Market surface: from where you are, in the ship you are flying, what is worth carrying right now — and what it will actually pay once the buyer fills up. Runs from the nearest terminal ranked by aUEC per hour with the profit after decay beside the quoted figure, loops with what the second lap pays (and a plain "not repeatable" when demand refills too slowly to fly the route twice), and a strip saying what the whole system can sustain. Every quote wears its age, every projection names the refill model it assumed, and the header says when the quotes last changed.
+- The Market's ship defaults to the one your game log names — the log says which ship you are in when you plot a quantum route — with its hold and drive from Atlas where known. Any other ship can be picked from Atlas's own list; where Atlas has no cargo grid for a hull yet, the hold comes from a small table in the app or is typed in, and the row says which. Legal-only, loading class, refill bracket, cross-system, wallet and quote age are controls, each with a sentence on what it changes.
+- A "worth flying now" panel lists the sinks that regained room since you last looked at them, with the best source for each. Your looks are kept on this device only; a terminal counts as looked at when you open its board, when you are standing at it, or when you say so.
+- Every terminal named on the Market opens its commodity board: what it buys and sells, how much room each sink has left, how full it is against the price curve, the 30-day band and how old each report is. The same board sits on a terminal's page.
+- Commodity quotes come from UEX; the surface carries the Powered by UEX badge, linking to uexcorp.space.
+
 ## 0.1.15-ptb.2 — 2026-09-13
 
 - The push-to-talk key the agent watches on the game PC can now be set from Settings › Connection on any paired device: click the key and press the one you want, or pick it from a list, and choose hold or toggle. It is saved on the agent and takes effect right away, so every device paired to it sees the same key.
