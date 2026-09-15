@@ -3,6 +3,13 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.1.15-ptb.5 — 2026-09-15
+
+- The map shows who holds a place. An outpost or bunker held by an outlaw faction that fires on anyone (the Nine Tails bunkers) is drawn in red; one whose guards react to your own standing (HeadHunters, Rough & Ready, Citizens for Prosperity) in yellow; everything lawful looks as it did. The key says which is which, and selecting a place says it in words — "Nine Tails · fires on anyone". Needs an Atlas that carries the field; older ones simply draw nothing new.
+- Blueprints you earned before installing HorizonOS are picked up too: on each launch the agent reads the game's rotated logs (logbackups) once, and the other of LIVE and HOTFIX when both are installed, and Atlas marks what they say you received. Each file is read one time; nothing is re-sent on later launches.
+- A blueprint nothing awards now says so: "no contract or reputation tier in the current build hands it out", instead of guessing at shops. Blueprints only come from finishing contracts.
+- Calibration: a proposal that lands you near your anchor but more than 50 m from its catalogued point can now be accepted. The review says how far off it puts you and lets you judge; it still refuses when some other place is nearer than the one you picked.
+
 ## 0.1.15-ptb.4 — 2026-09-15
 
 - Blueprint categories are named in plain words: the filter chips, the catalogue rows and a blueprint's page say "Armor" or "Vehicle weapons · size 3" where they showed the game's own codes. The names come from Atlas, so a category the game adds later reads properly without an app update.
