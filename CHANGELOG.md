@@ -3,6 +3,15 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.1.15-ptb.6 — 2026-09-17
+
+- The sign-in screen now says plainly that HorizonOS is an unofficial fan project, not affiliated with Cloud Imperium Games or Roberts Space Industries, instead of leaving that note tucked away in Settings.
+- Each channel now has a fixed download link that always gives the newest build: github.com/apexstarcomm/horizonos-releases/releases/download/ptb/HorizonOS.PTB_x64-setup.exe for the PTB, and the same under stable/HorizonOS_x64-setup.exe once the first stable ships.
+- Keybindings now live on their own page in Settings, and switching to the next or previous radio can be bound to a key alongside push-to-talk. The numpad + and - keys can be bound too.
+- Rebinding push-to-talk away from its default now actually replaces the default: previously the spacebar could keep working for push-to-talk after a different key was bound to it. Space now only works until you bind or clear the key yourself.
+- Mouse side buttons (Mouse4 and Mouse5) no longer navigate the app back or forward once bound to an action.
+- Switching surfaces now uses Alt plus a key instead of a bare number, and each surface's key can be changed from the same Keybindings page — this one is remembered on this device only.
+
 ## 0.1.15-ptb.5 — 2026-09-15
 
 - The map shows who holds a place. An outpost or bunker held by an outlaw faction that fires on anyone (the Nine Tails bunkers) is drawn in red; one whose guards react to your own standing (HeadHunters, Rough & Ready, Citizens for Prosperity) in yellow; everything lawful looks as it did. The key says which is which, and selecting a place says it in words — "Nine Tails · fires on anyone". Needs an Atlas that carries the field; older ones simply draw nothing new.
