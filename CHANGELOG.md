@@ -3,6 +3,11 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.1.15-ptb.9 — 2026-09-18
+
+- The agent now refuses to start a second time on the same machine instead of silently starting halfway (microphone, clipboard watcher and all) and then dying late, near-invisibly, on a port conflict — a real session showed exactly that: `/showlocation` stopped capturing with nothing in the log to say why.
+- A clipboard read failure (something else holding it, a permissions change) is now logged instead of silently discarded — it used to be indistinguishable from `/showlocation` simply not being run.
+
 ## 0.1.15-ptb.8 — 2026-09-18
 
 - If the agent's UCI session drops while you're flying, HorizonOS now takes you back to the sign-in screen instead of just showing "agent isn't logged into UCI yet" on whatever you were looking at.
