@@ -3,6 +3,67 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.1.15-ptb.8 — 2026-09-18
+
+- If the agent's UCI session drops while you're flying, HorizonOS now takes you back to the sign-in screen instead of just showing "agent isn't logged into UCI yet" on whatever you were looking at.
+- The report sheet now says when it's still checking what the community has already reported, instead of a field looking the same whether nothing's been reported or it just hasn't answered yet.
+- Screen readers now hear a short, clear name for the blueprint list's rows, the radio tune dialog's channel-directory rows, the header's current-location control, and push-to-talk — instead of every line of their content run together as one.
+- Search and the report sheet's close buttons now say "Close" instead of "esc" — Escape itself still works either way.
+- The agent picker now closes on Escape too, once there's already an agent to fall back to.
+- Radio: the Tune dialog's preset tiles now show which preset matches the frequency you're on, the same as the compact panel behind it, and its close button says "Done" instead of "esc".
+- Waypoints: pressing Escape now backs out of editing a waypoint or a "delete for good?" confirmation, the same as everywhere else Escape backs out of something.
+- A blueprint's recipe now says "Checking price…" for an ingredient it hasn't priced yet, instead of leaving the row blank the same way it looks once nobody's found selling it.
+- Radio: pressing Escape now cancels a "remove this radio" confirmation, the same as everywhere else Escape backs out of something.
+- Market: the "Best move right now" card announces as one short line for a screen reader — the rate and which panel it jumps to — instead of the whole card's text read out as its name.
+- Settings › Appearance now calls its colour picker "Livery" and offers eleven manufacturer paint schemes — Aegis, Anvil, Crusader, Drake, Gatac, Greycat, Mirai, MISC, MobiGlass, Origin and RSI — alongside the original Amber, Cyan and Orange, all in one list.
+- Waypoints: a row is now the click target for jumping to it on the map, the same as every other list in the app, instead of a separate Map button — Edit and Delete stay as their own smaller buttons. The header's three actions are sized like every other action button in the app instead of standing taller than the rest of the page.
+- Waypoints now uses the same status shapes as everywhere else — a dot for synced, a ring for not-yet-synced, a dashed ring for an imported read-only one — instead of its own hand-drawn squares, and the header's actions sit behind a divider from the title.
+- Report buttons are now a quiet pencil mark instead of a labelled button, and a blueprint's mission list wears one per mission instead of one per variant — the same reports, with far less shouting on screen.
+- On Linux, pinching on a touchpad no longer zooms the whole window — two-finger scroll still zooms the map underneath your cursor, the same as everywhere else.
+- Small captions and labels are a touch brighter, clearing the readability floor they always claimed to meet.
+- The livery you pick in Settings now reaches every screen, including the pairing-code box and the "Can't reach the agent" notice, which used to stay amber whatever you chose.
+- Every status light now has a shape as well as a colour: a dot for live, a ring for stale, a dashed ring for offline and a diamond for an error.
+- Settings › Appearance has a new Status colours switch. Colour-safe swaps the green and yellow status lights for blue-green and gold, which stay apart under red-green colour blindness; the shapes are the same either way.
+- A place held by an outlaw faction that fires on anyone now also carries a ring around most of its markers, so the map still says who holds it if you can't tell red from green; the key shows the same mark.
+- The Radio page no longer calls the transmitting radio "the amber radio" — it says "the highlighted radio", whatever livery you chose.
+- Blueprints: every row now shows held-or-not as a shape as well as a colour, and a blueprint row can be opened from the keyboard, not just a click.
+- A blueprint's recipe now says where to buy each catalogue-item part and for how much, cheapest first, with a Trace button straight to it; raw materials that aren't sold anywhere are left as they were.
+- Blueprints: hovering or keyboard-focusing a row is now clearly highlighted — it used to barely change colour at all.
+- Blueprints: the category list is now a dropdown grouped by kind, like the Star Map's filter, showing your progress (like "Size 2  0/116") instead of a long row of wrapping chips.
+- Blueprints: a row you already hold now says when you earned it instead of repeating how to earn it, which no longer matters once you have it.
+- Market has a jump strip pinned under the header — Refilled, Runs and Loops each show their count and best figure, and a click scrolls straight to that panel instead of a long scroll through all three.
+- Market's rows now lead with the one number that matters — the rate or SCU gained — with the route on its own line and the supporting math (capital, decay, timing, age) grouped underneath instead of crowded onto one wrapping line.
+- A terminal's commodity board carries the same change: the price leads each row on its own line, with room, fill, the 30-day band and the quote's age grouped underneath.
+- Market leads with a "Best move right now" card — the single best figure across Refilled, Runs and Loops, in plain words, so the page states its own answer instead of leaving the comparison to you.
+- Market's "From here, in this ship" controls now start collapsed on every screen size, since the summary line already says what they're set to.
+- The "Best move right now" card now shows how old its own figure is, the same age every other number on the page wears.
+- The jump strip's Refilled pill now shows a rate in aUEC/h, like Runs and Loops, instead of SCU gained, so all three line up for comparison.
+- A loop row's disclosure button now says "More", matching every other row, instead of "Legs".
+- Market now says plainly when the agent can't be reached, instead of the browser's own "Failed to fetch".
+- Market now says once, clearly, when no terminal is picked as your origin yet, instead of repeating the same instruction inside all three panels below.
+- Market's jump strip and every row's disclosure button are now plain, honestly-labelled controls — a screen reader no longer hears them announced as tabs they can't actually operate, and jumping to a panel now actually moves keyboard focus there, not just the scroll position.
+- Every "More"/"Less" and "Show rows"/"Hide" button on Market now tells a screen reader whether it's open or closed.
+- Market's "From here, in this ship" controls now open by themselves the first time something's still missing, instead of leaving the fix behind a small "Change" button the page just told you to find.
+- What the whole system can sustain is now a real switch on Market — click P25, Median or P75 and every figure on the page recomputes at that rate, instead of it only being a read-out.
+- A loop that wins "Best move right now" now says so honestly — "best as a one-off" when the second lap doesn't hold up, instead of always claiming it repeats.
+- When the agent can't be reached, Market no longer shows two warnings that contradict each other about picking an origin.
+- The "Best move right now" card now says how its figure compares to what the system can sustain overall.
+- Market's Runs and Loops panels have an "Expand all"/"Collapse all" switch for comparing several candidates at once.
+- Refilled, Runs and Loops each show five rows by default with a "Show all" to see the rest, instead of the full list always in view.
+- Once "Best move right now" has an answer, only the panel it came from stays open on Market — the other two collapse to their summary line, one click away.
+- The Star Map has a locate button next to zoom that centres and zooms in on your last position fix, the same as a locate button on any other map.
+- Opening the Star Map's filter or layers menu no longer shoves the buttons next to it sideways.
+- The Star Map's legend now trails off with "…" instead of cutting a word in half when the map is too narrow to show it in full.
+- Screen readers now hear whether a Star Map filter category is fully on, off, or only partly on, instead of just "button".
+- Waypoints: deleting one now asks you to confirm first, since there's no way to undo it.
+- Waypoints: the reason "Mark my position" is greyed out now stays on screen instead of only showing on hover.
+- Waypoints: clearing a name while editing and hitting Save no longer silently keeps the old name — Save waits until you type one.
+- Radio: a preset can now be saved from the keyboard — hold Enter or Space on it, the same as holding a click or a right-click.
+- Radio: push to talk can now be pressed and held from the keyboard, not just clicked or bound to a key.
+- Radio: removing one now asks you to confirm first, since it can't be undone.
+- Radio: the tune dialog now closes on the Escape key, not just its own "esc" button.
+- Radio: the "Sql" slider is now called "Gate" — Link Protocol is a digital link with no static for a squelch to listen through, and this always just quieted soft audio, not radio noise.
+
 ## 0.1.15-ptb.6 — 2026-09-17
 
 - The sign-in screen now says plainly that HorizonOS is an unofficial fan project, not affiliated with Cloud Imperium Games or Roberts Space Industries, instead of leaving that note tucked away in Settings.
