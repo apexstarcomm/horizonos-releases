@@ -3,6 +3,14 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.1.15-ptb.11 — 2026-09-21
+
+- Push-to-talk and the radio next/previous keys can now be bound to a modifier combo — hold Ctrl, Alt or Shift together with another key — instead of only a single key.
+- Keybindings can now use most of the keyboard, not just letters, digits and function keys — punctuation, Tab, Enter, the arrow and navigation keys, and the full numpad are all bindable now.
+- Added an opt-in diagnostics toggle (off by default, in the setup screen) that sends anonymous performance traces through your account's relay — nothing is sent unless you turn it on.
+- The error toast and the red "error" status dot (audio input, blueprints, waypoints) now actually show red instead of rendering with no color at all.
+- Every dropdown (Settings, the market panel's ship and origin pickers, the report sheet) now renders with its intended dark styling on Linux instead of a plain native combo box.
+
 ## 0.1.15-ptb.9 — 2026-09-18
 
 - The agent now refuses to start a second time on the same machine instead of silently starting halfway (microphone, clipboard watcher and all) and then dying late, near-invisibly, on a port conflict — a real session showed exactly that: `/showlocation` stopped capturing with nothing in the log to say why.
