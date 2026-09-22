@@ -3,6 +3,10 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.1.15-ptb.15 — 2026-09-22
+
+- With telemetry turned on, the agent now sends Atlas only its own spans — it had also been uploading its HTTP library's internal trace spans, close to a megabyte a minute even while you were idle, and no longer does.
+
 ## 0.1.15-ptb.14 — 2026-09-22
 
 - The "CURRENT LOCATION" readout now names every place between the body and the spot you're standing on — Lorville, then Workers District, for someone at L19 — instead of jumping straight from the body to the innermost one and leaving the city out.
