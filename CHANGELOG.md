@@ -3,6 +3,10 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.1.15-ptb.14 — 2026-09-22
+
+- The "CURRENT LOCATION" readout now names every place between the body and the spot you're standing on — Lorville, then Workers District, for someone at L19 — instead of jumping straight from the body to the innermost one and leaving the city out.
+
 ## 0.1.15-ptb.13 — 2026-09-22
 
 - Fixed a place inside a bigger one — Lorville's own Teasa Spaceport or Workers District, for instance — sometimes not being recognized when figuring out where you are from a location name in the game log. Atlas started nesting places like that under their own city, and the piece that resolves your location hadn't caught up.
