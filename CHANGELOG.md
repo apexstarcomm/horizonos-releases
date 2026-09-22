@@ -3,6 +3,12 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.1.15-ptb.12 — 2026-09-22
+
+- New Mining screen: browse every mineable resource in the game and see which bodies and surveyed caves it's found on, with a map link straight to each cave node. Blueprint recipes that call for a raw material now show a "Find where to mine this" button next to it, when the game files say where that material comes from.
+- Mining's "Compare resources" mode: pick 2 to 4 resources and find every body that has all of them at once, instead of checking each one separately.
+- The Mining list now says how each resource is mined (Ship, Vehicle or Hand) and on how many bodies and cave nodes it's found, so you can tell what's worth opening without opening it. Every body a resource is found on now shows its system and type, groups its deposits under the body's name, and has a "View on map" button that takes you straight there.
+
 ## 0.1.15-ptb.11 — 2026-09-21
 
 - Push-to-talk and the radio next/previous keys can now be bound to a modifier combo — hold Ctrl, Alt or Shift together with another key — instead of only a single key.
