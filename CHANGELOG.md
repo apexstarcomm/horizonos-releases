@@ -3,6 +3,11 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.1.15-ptb.13 — 2026-09-22
+
+- Fixed a place inside a bigger one — Lorville's own Teasa Spaceport or Workers District, for instance — sometimes not being recognized when figuring out where you are from a location name in the game log. Atlas started nesting places like that under their own city, and the piece that resolves your location hadn't caught up.
+- The Universe panel's POI list now nests a place like that under its own city instead of listing it as an unrelated entry next to it.
+
 ## 0.1.15-ptb.12 — 2026-09-22
 
 - New Mining screen: browse every mineable resource in the game and see which bodies and surveyed caves it's found on, with a map link straight to each cave node. Blueprint recipes that call for a raw material now show a "Find where to mine this" button next to it, when the game files say where that material comes from.
