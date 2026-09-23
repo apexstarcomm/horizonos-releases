@@ -3,6 +3,34 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.2.0-ptb.1 — 2026-09-23
+
+- Settings' "Reduce motion" toggle now actually does what it's always claimed: the flash when a keybind fires and the blinking offline dot both stop, alongside the Star Map's own camera movement (zoom, pan, locate, reset). Your OS's own reduce-motion setting now does the same automatically too, on top of the in-app toggle.
+- The Star Map's "locate me" button now stays clickable and reachable by keyboard even with no position yet — tapping it says why in a toast instead of just going dim with the reason hidden in a tooltip a touch player could never see and a keyboard player could never tab to.
+- The Star Map's destination bearing, distance and vertical angle now come from the agent's own continuous guidance — the same numbers the in-game overlay already showed — instead of a second, separately-computed route; it now also says clearly when your position hasn't resolved to a system yet, and keeps showing your last real guidance (marked "not connected") rather than going blank the moment the agent disconnects. "Set route"/"Trace route" buttons across the app are relabelled "Route to" for consistency, and the market's stop links gained one where there wasn't any way to set a destination before.
+- A pass on the Star Map's own wording: the cold-start card, the universe tree's summary lines and the destination card no longer read like an error log ("Atlas returned no systems", "catalogued", "the payload publishes…") — they say what's actually going on in plain words. Toolbar buttons ("Universe", "Measure", "Legend", the filter chip) still show in the same tracked all-caps style, but the underlying label is now an ordinary sentence, so a screen reader says the word instead of spelling out letters. "Distribution centre" and "Centre the map on your position" are spelled the American way now, matching the rest of the map; Settings' "Star map" section is capitalized "Star Map" throughout.
+- The Star Map's surface grid now actually opens centred on the body, and the toolbar's Reset button returns to that same centred view — both used to pin the grid's top-left corner to the canvas's own top-left corner instead, at whatever the minimum zoom is.
+- The Star Map's "where am I / what's selected / where am I going" side card is one card now, at every width — it used to be up to three different things depending on your window size (a click-to-reveal "you are here" callout, a selection callout, and either a one-line "To" bar or a separate 330px tracking column for a tracked destination). "You are here" no longer needs a click on your own marker to show — it's there whenever you have a position fix. The destination section now also shows the vertical angle to the target, not just bearing and distance.
+- The Star Map's header is one breadcrumb now ("Stanton › Hurston") instead of a row of system chips plus a plain system/body label — switching systems entirely is the universe drawer's own tree now.
+- The Star Map's bottom-left status line is a short status chip now ("123 of 264 places · 141 hidden") — click it for the full sentence, instead of a long always-on line running under the canvas.
+- The Star Map's search, filters, layers, measure, legend and universe controls are one toolbar in the canvas's top-left corner now, instead of scattered across three separate clusters. Label density (all markers vs. auto vs. just the selection) is a map control now too, not Settings-only. The legend's own on/off switch moved into the toolbar as a "LEGEND" button; the strip itself still sits at the bottom edge, without the darkened backdrop that used to sit behind it and the readout line below it.
+- The Star Map's universe tree is now a drawer you open with the "Universe" chip or the U key, closed by default at every width — it used to be a permanent 268px panel beside the map on a wide window, which is most of the width the map's canvas gives up before you've asked to see anything but the map. Esc closes it, and whether it's open persists across a reload.
+- Proposing a new place now lets you say what it's inside — the "Part of" field defaults to the nearest catalogued place your fix already reads as (Area18, say), searchable for a different one, clearable to propose a standalone place instead.
+- The Star Map's locate button now works while you're in flight, in orbit or at a station — it used to do nothing unless you were standing on the ground.
+- A new position fix now centres and zooms the map on you by itself, instead of only updating the header and leaving you to find the dot.
+- "Copy coordinates" on the map's right-click menu now actually copies them.
+- The map's destination column no longer shows a made-up elevation, bearing or distance — it now says "–––" for anything it doesn't actually know, and the "Update position" and "Set your position" buttons, which never did anything, are gone.
+- The Star Map's loading screen no longer claims Atlas found no systems while your home system is still loading — it now says it's loading.
+- Searching the map now dims the places that don't match instead of hiding the rest of the body.
+- The map's empty-grid message now tells you whether the filter or the zoom is holding markers back, with a button that fixes the one that's actually the problem.
+- The live route readout now says whether it's computing, failed, or waiting on a position, instead of always suggesting you run /showlocation.
+- The map's right-click/long-press menu no longer opens off-screen near an edge, and now closes when you click anywhere else, not only on the map.
+- A selected place on the map can now be closed with its own button, and Esc now clears a selection when nothing else is open.
+- Removed two Settings toggles that didn't do anything: "Keep map interactive when stale" and "Dim chrome while the game is running".
+- The map's 3D view can no longer crash the whole app if your graphics driver can't do WebGL.
+- A tracked destination can now be cleared from the header, not only from its own place card.
+- The map's basemap can no longer be muted to nothing from the layers popover — it can be dimmed, but the ground texture under the markers always stays on.
+
 ## 0.1.15-ptb.16 — 2026-09-23
 
 - A blueprint's raw materials now carry a small crosshair mark beside the name to jump to where they're mined, in place of the full-width "Find where to mine this" button that sat under each one.
