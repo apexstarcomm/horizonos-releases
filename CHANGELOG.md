@@ -3,6 +3,17 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.2.1-ptb.1 — 2026-09-23
+
+- Small text on the Blueprints screens is a step larger, and facts like a blueprint's drop odds, its earn-source and when you earned it are no longer in the dimmest grey, so they're easier to read at a glance.
+- Segmented controls across the app — Held and Source on Blueprints, Browse/Compare on Mining, the Star Map's label density — now draw their labels in the same tracked caps as the toolbar buttons, from ordinary sentence-case labels a screen reader can say as words.
+- The Blueprints category picker's rows are taller and easier to tap, taller still on a touch screen.
+- A blueprint's page now reads as one column at every window size, how to earn it above the recipe, instead of two side-by-side panels that left a large empty box beside the recipe for the many blueprints no mission awards yet.
+- The Blueprints header now says, in one line beside the title, how many blueprints there are, how many you hold, and how many a mission is known to award.
+- The Blueprints list now loads more rows by itself as you scroll to the bottom, instead of stopping at a "Show more" button every 50 rows; a page that failed to load offers "Try again" in its place.
+- Blueprints can now be sorted by name, category or craft time.
+- Blueprints' wording no longer mentions Atlas or "the agent" — it says what's going on in plain words, and spells "catalog" the American way like the rest of the app.
+
 ## 0.2.0-ptb.1 — 2026-09-23
 
 - Settings' "Reduce motion" toggle now actually does what it's always claimed: the flash when a keybind fires and the blinking offline dot both stop, alongside the Star Map's own camera movement (zoom, pan, locate, reset). Your OS's own reduce-motion setting now does the same automatically too, on top of the in-app toggle.
