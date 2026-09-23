@@ -3,6 +3,11 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.1.15-ptb.16 — 2026-09-23
+
+- A blueprint's raw materials now carry a small crosshair mark beside the name to jump to where they're mined, in place of the full-width "Find where to mine this" button that sat under each one.
+- A mineable resource's page now shows its scan mass — the reading a ship's mining laser gives a rock before you open the breakdown — so you can recognize it in the field. Shown only for ship-mineable ores, since that reading is a ship-mining tool.
+
 ## 0.1.15-ptb.15 — 2026-09-22
 
 - With telemetry turned on, the agent now sends Atlas only its own spans — it had also been uploading its HTTP library's internal trace spans, close to a megabyte a minute even while you were idle, and no longer does.
