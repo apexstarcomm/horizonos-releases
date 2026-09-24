@@ -4,6 +4,10 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.42 — 2026-09-24
+
+- The Star Map's side card describes the body you are looking at: its air — temperature in °C, pressure, humidity, the top gases — and what is mineable on it, with each ore's scan mass. Click the card's header to fold it to one line; it stays folded until you open it again.
+
 ## 0.3.0-ptb.41 — 2026-09-24
 
 - Mining tells you which rock a scan mass belongs to. An ore's page used to list every mass it had ever been found at — Agricium showed four, three of them other ores' rocks that carry a little Agricium — so the header now names the ore's own rock only ("Scans at 3,885"), says so in a sentence you can read rather than a tooltip, and lists the multiples ×2 to ×6 beside it; every deposit row shows its own rock's mass.
