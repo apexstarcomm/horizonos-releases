@@ -4,6 +4,17 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.43 — 2026-09-24
+
+- Market's Trade from here can start from any terminal in any system, whether or not you are there or have run /showlocation, and in any ship from the list — plan a run before you fly it.
+- Market opens on Prices: every commodity traded in your system with its cheapest place to buy and best place to sell, and a page per commodity listing every terminal that buys or sells it — switch to All systems to look further.
+- Market's Trade from here is one list instead of three panels, and every row says the trade itself — "Buy Titanium at MIC-L3 · 7,034 → sell at ARC-L3 · 8,200" — with the profit per trip, the time and the rate; loops that repeat the same trade are folded into one row.
+- Terminals in Market open their commodity board in a side drawer, so you keep your place, and show Map and Route to wherever the terminal's location is known.
+- Market says how old prices typically are once, at the top, and only marks a price that is much older than the rest, instead of warning on every row.
+- Market's trade settings keep the ones you change most — where from, which ship, hold, loading, legal only — in view, with the rest under More options, and the wording says buyer and seller rather than sink and source.
+
+- Market names terminals the short way players do — "TDD Area 18", "MIC-L3" — instead of "TDD - Trade and Development Division - Area 18", and learns the terminals of your system from one quick list rather than reading every quote first.
+
 ## 0.3.0-ptb.42 — 2026-09-24
 
 - The Star Map's side card describes the body you are looking at: its air — temperature in °C, pressure, humidity, the top gases — and what is mineable on it, with each ore's scan mass. Click the card's header to fold it to one line; it stays folded until you open it again.
