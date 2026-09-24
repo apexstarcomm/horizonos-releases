@@ -4,6 +4,24 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.41 — 2026-09-24
+
+- Mining tells you which rock a scan mass belongs to. An ore's page used to list every mass it had ever been found at — Agricium showed four, three of them other ores' rocks that carry a little Agricium — so the header now names the ore's own rock only ("Scans at 3,885"), says so in a sentence you can read rather than a tooltip, and lists the multiples ×2 to ×6 beside it; every deposit row shows its own rock's mass.
+- Mining labels the two bands an ore's own rock lists it in — "base" and "bonus", the game's own two entries — so a 9.7–15.7% and a 34.3–84.3% row for the same rock no longer read as two identical deposits.
+- The note that only cave deposits have a fixed spot, and that "Map" opens the body, sits at the top of the bodies list now instead of after the last row.
+- An ore's page lists each body once, grouped by system — Iron was thirty rows for fifteen bodies, each body saying the same two things — with the ore's own rock's two bands on one line and any other rock it is a trace in named as such ("in Titanium (Ore) rock"). The way it is mined moved from every row to the header.
+- The 708-row cave list is gone from an ore's page. Each body says how many surveyed caves it has ("41 caves" beside Daymar) and Map opens the body, where the caves are; the caves themselves belong to the body, not the ore, and every hand-mined ore sits in all of them.
+- Compare results say "in Bexalite (Raw) rock · 2%–5%" under Gold instead of leading with the other ore's name, so Gold listed in a Bexalite deposit no longer reads as Gold being Bexalite.
+- Mining can start from a place. A Place filter lists every system, planet, moon and belt the map knows, plus "Where I am" for wherever the game last placed you; pick one and the list narrows to what is mineable there — a planet means the planet and its moons. "Find bodies with all of these" respects the same place. Needs the matching Atlas update.
+- Mining's Browse / Compare / Identify modes are one list now. A Select button shows the checkboxes; from a selection you can find bodies that have all of them, or Identify them, which stars them.
+- The Identify page is a sheet of cards, one per starred ore, each with its rock's scan mass at ×1 to ×6 in large type — made to be read at a glance while the laser is on a rock, not typed into. A reading can still be typed to light the matching card.
+- An ore's page lists the asteroid fields and clusters a system places it in without a spot — Lagrange fields, deep-space belts — under the bodies, once the catalog serves them.
+- The Star Map's side card shows what is mineable on the body you are looking at, each name a way into the ore's page, with its rock's scan mass beside it.
+- The Mining list can be narrowed to how you mine — Ship, Vehicle or Hand — and sorted by name, by how many bodies an ore is found on, or by how many surveyed caves have it.
+- Star an ore to track it: from its own page, from the list, or from a blueprint's ingredient row beside the "find where to mine it" crosshair. The list has a Tracked filter, and the star follows you across reloads on this machine.
+- "Refines into Iron" on an ore's page is a link now: it opens Blueprints filtered to every blueprint that uses Iron, with a chip to clear the filter. Needs the matching Atlas update; an older one answers the whole list, and the chip still shows what was asked.
+- Mining's type sits on the same scale as Star Map and Blueprints now; counts are no longer in the caption colour; the per-row "View on map" buttons are the same Map control the map's own callout uses; compare mode uses real checkboxes; a resource row is a real button on the name rather than a whole table row pretending to be one, so a screen reader keeps the columns.
+
 ## 0.3.0-ptb.40 — 2026-09-24
 
 - PTB builds are numbered differently from here on: the version is the next stable's number plus one build counter that never resets, so the build after 0.2.1-ptb.2 is 0.3.0-ptb.40 (39 was cut but never built), and a bigger number after "ptb." is always a newer build.
