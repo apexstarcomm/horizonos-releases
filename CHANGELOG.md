@@ -3,6 +3,10 @@
 Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
 same notes appear on the update screen in the app when a build is offered.
 
+## 0.2.1-ptb.2 — 2026-09-24
+
+- Fixed a crash loading the Star Map for any system — the agent's own proxy dropped the field Atlas started sending today for a POI hosted by the star itself (Nyx's own Gateways, Transit Points and stations; 7 of Stanton's own), so the interface received no field at all for it rather than an empty list, and crashed instead of drawing an empty one.
+
 ## 0.2.1-ptb.1 — 2026-09-23
 
 - Small text on the Blueprints screens is a step larger, and facts like a blueprint's drop odds, its earn-source and when you earned it are no longer in the dimmest grey, so they're easier to read at a glance.
