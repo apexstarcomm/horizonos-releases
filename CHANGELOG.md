@@ -4,6 +4,12 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.40 — 2026-09-24
+
+- PTB builds are numbered differently from here on: the version is the next stable's number plus one build counter that never resets, so the build after 0.2.1-ptb.2 is 0.3.0-ptb.40 (39 was cut but never built), and a bigger number after "ptb." is always a newer build.
+- Stable builds, when they ship, check for updates from the stable channel's own fixed download link, the same way PTB builds already do; a stable can then be rolled back if a build turns out bad.
+- The Star Map's System and Body views are live for everyone now — a full 3D orbital view of a system's planets, moons, Lagrange points and stations, and of one body's own moons and orbital traffic. Camera controls, a precise "you are here" mark, measuring real distance between two bodies, right-click actions, a legend, and touch support all come with it.
+
 ## 0.2.1-ptb.2 — 2026-09-24
 
 - Fixed a crash loading the Star Map for any system — the agent's own proxy dropped the field Atlas started sending today for a POI hosted by the star itself (Nyx's own Gateways, Transit Points and stations; 7 of Stanton's own), so the interface received no field at all for it rather than an empty list, and crashed instead of drawing an empty one.
