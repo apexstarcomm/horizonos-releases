@@ -4,6 +4,10 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.44 — 2026-09-24
+
+- The Star Map's Body card shows the air and what is mineable again on bodies whose resources grow in clusters, where it had been showing nothing.
+
 ## 0.3.0-ptb.43 — 2026-09-24
 
 - Market's Trade from here can start from any terminal in any system, whether or not you are there or have run /showlocation, and in any ship from the list — plan a run before you fly it.
