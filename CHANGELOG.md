@@ -1,7 +1,8 @@
 # What's new in HorizonOS
 
-Newest build first. PTB builds are numbered `<version>-ptb.<build>`; the
-same notes appear on the update screen in the app when a build is offered.
+Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
+one build counter that never resets; a stable is a PTB promoted as it was.
+The same notes appear on the update screen in the app when a build is offered.
 
 ## 0.2.1-ptb.2 — 2026-09-24
 
