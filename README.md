@@ -54,10 +54,13 @@ update screen in the app when a build is offered.
 
 ## Auto-updates
 
-Both channels can check for and install updates from this repo, signed
-against a key kept out of the source tree entirely. If a build doesn't
-prompt you for a newer version yet, grabbing the latest installer above
-always works too.
+Both channels check for updates from this repo: PTB installs from the
+`ptb` release, stable installs from the `stable` release, each signed
+against a key kept out of the source tree entirely. PTB builds are
+numbered `X.Y.0-ptb.N`, where N is one build counter that never resets;
+a stable is the PTB that was promoted, `X.Y.0`, and `X.Y.1` onwards are
+hotfixes to it. If a build doesn't prompt you for a newer version yet,
+grabbing the latest installer above always works too.
 
 ## System requirements
 
