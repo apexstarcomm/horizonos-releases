@@ -4,6 +4,10 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.46 — 2026-09-25
+
+- The radio keeps up when Link Protocol's reserved channels change while you're connected: a channel that is removed stops showing RX ONLY on a radio still tuned to it, and newer relay settings no longer make the radio forget the channel list.
+
 ## 0.3.0-ptb.45 — 2026-09-25
 
 - The radio knows about Link Protocol's reserved channels. A radio tuned to one shows the channel's name, plus RX ONLY when you can listen but not transmit there, and the push-to-talk bar says so instead of keying a microphone the relay would ignore.
