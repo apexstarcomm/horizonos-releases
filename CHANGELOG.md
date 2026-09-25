@@ -4,6 +4,10 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.47 — 2026-09-25
+
+- The radio plays Link Protocol's stations: tune one from the reserved channels list, marked STATION, and HorizonOS plays its music in stereo on that radio, with the song that's on and your usual volume and ear. There is nothing to transmit on a station, so the push-to-talk bar says it's listen only.
+
 ## 0.3.0-ptb.46 — 2026-09-25
 
 - The radio keeps up when Link Protocol's reserved channels change while you're connected: a channel that is removed stops showing RX ONLY on a radio still tuned to it, and newer relay settings no longer make the radio forget the channel list.
