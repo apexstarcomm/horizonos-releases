@@ -4,6 +4,33 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.48 — 2026-09-25
+
+- Share waypoints by code: Share makes an HZN-XXXX-XXXX code for the waypoints on screen, and whoever enters it under Import gets their own copy — later edits on either side stay on that side. Share lists your codes so you can revoke one.
+- Import takes a share code (showing what's in it before anything is added), a set invite, or a file exported from HorizonOS, so an export can finally be brought back in.
+- Sets: a named group of waypoints that others follow live. Make one under Sets on the Waypoints page, add waypoints to it from Select, and invite people by Atlas username or with an invite they paste under Import — as viewers, or as editors who can add their own. Everyone in a set sees its waypoints as they are now, on the list and on the map, can route to them, and can copy one into their own.
+- Propose one of your waypoints as a place for everyone: Propose as a place on the waypoint (in the list or on its map card) opens the new-place form already filled in with its name, kind and note, and places it exactly where the waypoint is — no need to stand there and run /showlocation. It goes to review like any other proposal.
+- Waypoints can say what kind of place they are — a cave, a wreck, an outpost — using the same kinds the map uses for locations. Set it when you edit a waypoint, filter the Waypoints page by it, and see it on the map: a waypoint with a kind takes that kind's shape, filled in so it still reads as yours.
+- The map's Filters can hide your own waypoints by kind; the one you've selected or are routing to always stays visible.
+- Add waypoint on a location now starts the waypoint with that location's name and kind.
+- You can route to your own waypoints: Route to on any waypoint, in the list or on the map, and the in-game overlay guides you there the same way it does to a location. A waypoint that only exists on this device is synced first.
+- Map on a waypoint now opens the Star Map centered on it and zoomed in, with the waypoint highlighted and its card open, and Back to Waypoints returns you to the list.
+- Tapping one of your waypoints on the map opens its card, with Route to, Edit and Close, instead of doing nothing.
+- A waypoint found with search opens on the map, like a location does.
+- The map no longer says "Nothing shows at this zoom" while your waypoints are on screen.
+- The Waypoints page has been rebuilt to match Mining and Blueprints: search your waypoints by name or note, narrow them to a system, planet or moon, and see them grouped by where they are, or sorted by most recent or by name.
+- Tap a waypoint to open it in place: its full note, where it is, and Show on map, Edit, Share and Delete. Map on every row jumps straight to it.
+- Select several waypoints to share or delete them together.
+- Share hands over the waypoints you're looking at, as a file or as text, and says plainly that share codes aren't available yet; the share-code box that could never work is gone.
+- Mark my position can always be pressed; without a position it tells you what to do instead of sitting greyed out.
+- Waypoints on a planet or moon whose system hadn't loaded yet now load it themselves, so every row names its place.
+- Editing a waypoint while your account can't be reached no longer makes a second copy of it the next time you sync; the edit waits and Sync now sends it.
+- Waypoints you edit or delete on another device now change here too, and every waypoint loads, not just the first 100.
+- A waypoint deleted while your account couldn't be reached stays deleted, and the next sync finishes the job instead of bringing it back.
+- A waypoint saved before its planet or moon had loaded shows up on the map once that system loads, instead of staying blank for good.
+- Deep-space waypoints read "Deep space" and their system instead of a made-up 0°, 0°, and every waypoint shows when it was last edited and how high it was marked.
+- If your waypoints can't be read from your account, the Waypoints page says so and offers Try again, instead of quietly showing only what this device has.
+
 ## 0.3.0-ptb.47 — 2026-09-25
 
 - The radio plays Link Protocol's stations: tune one from the reserved channels list, marked STATION, and HorizonOS plays its music in stereo on that radio, with the song that's on and your usual volume and ear. There is nothing to transmit on a station, so the push-to-talk bar says it's listen only.
