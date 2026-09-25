@@ -4,6 +4,15 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.45 — 2026-09-25
+
+- The radio knows about Link Protocol's reserved channels. A radio tuned to one shows the channel's name, plus RX ONLY when you can listen but not transmit there, and the push-to-talk bar says so instead of keying a microphone the relay would ignore.
+- If Link Protocol refuses a tune or a transmission on a reserved channel, the radio goes back to where it was and says which role the channel needs, instead of showing a frequency or a TRANSMITTING state that isn't real.
+- Frequencies go in 0.1 MHz steps (243.4, not 243.451), so you and your wing can't end up a digit apart on two silent channels. The tune dialog accepts any of them from 30 to 1000 MHz; it used to stop at 512 MHz.
+- The radio follows Link Protocol's own settings — the band, the step, how many radios you can run — instead of carrying its own copy.
+- The tune dialog lists Link Protocol's reserved channels, such as Emergency Broadcast, Medical Distress and EMT Dispatch, with what you can do on each and the role you'd need for the rest. Tap one to tune it; a channel you can call but not hear tunes as Call only.
+- The tune dialog has a Call only switch: the radio transmits and never receives. It is how you call a channel you may not listen to, such as Medical Distress, where anyone can call and only EMTs hear the calls.
+
 ## 0.3.0-ptb.44 — 2026-09-24
 
 - The Star Map's Body card shows the air and what is mineable again on bodies whose resources grow in clusters, where it had been showing nothing.
