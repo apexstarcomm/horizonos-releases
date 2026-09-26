@@ -4,6 +4,39 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.50 — 2026-09-26
+
+- Talk and Listen have their own limits, set by Link Protocol: up to 10 radios to talk on, 2 to listen on, and the Starcomm Alert receiver, so stations and nets you only monitor never take a radio you talk on. Each zone shows its own count and has its own Add button.
+- A Listen radio can monitor any frequency, not only stations and listen-only channels, and never transmits: it can't be made active, next/previous radio skips it, and Link Protocol refuses it too.
+- The tune dialog shows what fits the radio: a Talk radio lists the channels you can transmit on and your plans' channels; a Listen radio lists stations and every channel you can hear.
+- Stations show how many players are listening, and a Website button when the station has one, which opens in your browser.
+- Plans are for Talk radios: Share plan offers your Talk radios, and Import plan sets up Talk radios.
+- Share a channel plan: Share plan on the Radio turns the radios you pick into a plan with a name and an HZN-XXXX-XXXX code, for your org's members to set their radios up for an event. Encrypted channels share their key's name only, never the passphrase. Share plan lists your codes so you can revoke one.
+- Import plan takes a plan's code, shows its channels, and lets you place each on a new radio, over one of yours, or skip it before anything is tuned. A channel that is encrypted asks for its passphrase on its radio (SET KEY), and a reserved channel follows the relay if it has moved.
+- Channels from plans you have imported are listed in the tune dialog, so any radio is one tap from an operation's nets.
+- A plan's code pasted into the Waypoints page's Import takes you to the Radio to set it up; plan and waypoint codes share one format.
+- Starcomm Alert has a place at the top of the Radio's Listen column: the same alerts the status bar lists, with their time left and Show on map, and nothing to set up to hear them.
+- Starcomm Alerts spoken on Emergency Broadcast are heard on their own receiver, which uses one of your ten radios and can be muted, with its own volume and ear, while the text alerts keep coming. A radio you had already tuned to Emergency Broadcast becomes that receiver instead of being doubled.
+- While an alert is being spoken the Radio shows ON AIR and the alert's text beside it, and each alert says whether it was spoken.
+- Stations turn down while Emergency Broadcast is speaking and come back up after, so music never talks over an emergency.
+- The Radio page is split in two: Talk holds the radios you can transmit on, with the push-to-talk bar under them, and Listen holds stations and channels you can only hear. On a narrower screen Listen follows Talk.
+- Radios in Talk fill the room Talk has, so opening the log or the Listen column no longer squeezes them into too many columns.
+- Each radio now shows only the controls that work for it: a station is a now-playing card with volume and ear, a channel you can only listen to has no presets or transmit button, and a call-only radio says you won't hear replies.
+- A radio that's switched off shrinks to its frequency and a Power on button.
+- Expand on a radio replaces the one-, two- and three-column width buttons: it shows a larger readout and that radio's own traffic log.
+- The tune dialog now changes nothing until you press Apply, which sets frequency, name, encryption and receive mode together; picking a preset, a recent frequency, a channel or a station still tunes straight away.
+- Stations have their own list in the tune dialog, apart from the reserved channels.
+- Channels you can only listen to are marked LISTEN ONLY instead of RX ONLY.
+- The Radio header no longer shows the online, encrypted and receiving counts.
+- Stations and channels you can only listen to no longer offer Set active, and next/previous radio skips them, so push-to-talk always lands on a radio you can talk on.
+- If the radio you talk on becomes one you can't (a station, a channel you may only hear, or switched off), HorizonOS moves you to the next radio you can talk on and tells you.
+- The push-to-talk bar shows the key you actually bound, and offers Bind a key when there isn't one, instead of always saying Space.
+- Radios no longer show "0 on net · age unknown", and the tune dialog no longer shows an empty channel directory: nothing reports who is on a channel yet.
+- The transmission log records how long you really talked, including when you pressed your push-to-talk key on the game PC.
+- New radios open in the ear you chose under Settings › Radio.
+- Making a radio panel wider no longer stops you adding radios.
+- On a narrow screen the Log button is hidden, since there is no room to show the log.
+
 ## 0.3.0-ptb.49 — 2026-09-26
 
 - When Link refuses your sign-in, HorizonOS now waits longer between retries and asks for a fresh token each time, instead of retrying several times a second with the same one.
