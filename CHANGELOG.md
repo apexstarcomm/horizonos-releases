@@ -4,6 +4,18 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.49 — 2026-09-26
+
+- When Link refuses your sign-in, HorizonOS now waits longer between retries and asks for a fresh token each time, instead of retrying several times a second with the same one.
+- Starcomm Alerts in the System and Body views too: the same double ring marks the place, moon, planet, Lagrange point or star an alert is about, bodies say how many alerts they carry ("2 ALERTS"), a banner at the top of the System view shows alerts for the whole system, and a body's card lists its alerts even when folded.
+- Starcomm Alerts are on the surface map: a double ring and a "!" mark the place an alert is about, in red for critical and amber for advisory, and the place stays on the map even if its kind is filtered out. Select it to read the alert and how long it has left. Filter has an Alerts switch, which is on every time you start, and the legend explains the mark.
+- Show on map on a Starcomm Alert now opens the body or the whole system the alert is about, not only a single place, and the map's own "View on map" links no longer land before the system has finished loading.
+- On the surface map, hostile stations, rest stops and asteroid bases now carry the same red ring as other hostile places, and a selected one shows its selection ring; both used to be missing on that marker shape.
+- Starcomm Alerts: when an emergency alert goes out for the system you're in, HorizonOS shows it within about 15 seconds and keeps it on screen until you dismiss it or it expires, with a Show on map button when it names a place. You get it even when you're not signed in.
+- The status bar shows how many alerts are live ("2 ALERTS"), red when one is critical for your system. Click it for the list, each with its time left and a way to the map.
+- With the in-game overlay on, the most severe alert for your system sits at the top of the panel with its countdown, whether or not you have a destination.
+- Alerts count down correctly even if your computer's clock is wrong.
+
 ## 0.3.0-ptb.48 — 2026-09-25
 
 - Share waypoints by code: Share makes an HZN-XXXX-XXXX code for the waypoints on screen, and whoever enters it under Import gets their own copy — later edits on either side stay on that side. Share lists your codes so you can revoke one.
