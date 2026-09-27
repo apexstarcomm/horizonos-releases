@@ -4,6 +4,10 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.53 — 2026-09-27
+
+- Unplugging your headset and plugging it back in no longer leaves the Radio silent: HorizonOS switches back to it within a couple of seconds, and follows Windows when you change the default device.
+
 ## 0.3.0-ptb.52 — 2026-09-27
 
 - New Beacon page: when you need help (medical, rescue, refuel, repair, combat, escort or anything else), pick it and send. HorizonOS tells Dispatch your system, where you are and your server, so there is nothing to type. The page then tracks your call from received to on scene, shows your crew's RSI handles to add on Spectrum, and has a thread to talk to them. Add details or cancel at any time.
