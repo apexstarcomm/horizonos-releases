@@ -4,6 +4,10 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.54 — 2026-09-27
+
+- Radio: the Gate slider is gone. It cut the quiet half of everyone's words unless you set it to zero, and there was nothing else for it to cut: your radios now play what the other player sent, at their volume.
+
 ## 0.3.0-ptb.53 — 2026-09-27
 
 - Unplugging your headset and plugging it back in no longer leaves the Radio silent: HorizonOS switches back to it within a couple of seconds, and follows Windows when you change the default device.
