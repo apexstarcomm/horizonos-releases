@@ -4,6 +4,11 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.55 — 2026-09-27
+
+- Keybinds: a key bound on its own and the same key with a modifier bound to another action now fire one action each. Pressing Ctrl+K used to trigger both K and Ctrl+K; a plain key still works while you hold a modifier the game uses, such as Shift to sprint, unless that exact combination is bound to something else.
+- Mining: the agent can now read the mass on your ship's scanner straight off the screen and light up the starred ore it matches in the overlay's Mining module, with the cluster size. It is off unless you turn it on (docs/vision.md), looks at the monitor the way a screen recorder does, and keeps nothing but the number.
+
 ## 0.3.0-ptb.54 — 2026-09-27
 
 - Radio: the Gate slider is gone. It cut the quiet half of everyone's words unless you set it to zero, and there was nothing else for it to cut: your radios now play what the other player sent, at their volume.
