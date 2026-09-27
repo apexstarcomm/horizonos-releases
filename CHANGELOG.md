@@ -4,6 +4,14 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.52 — 2026-09-27
+
+- New Beacon page: when you need help (medical, rescue, refuel, repair, combat, escort or anything else), pick it and send. HorizonOS tells Dispatch your system, where you are and your server, so there is nothing to type. The page then tracks your call from received to on scene, shows your crew's RSI handles to add on Spectrum, and has a thread to talk to them. Add details or cancel at any time.
+- New Dispatch page for granted dispatchers and responders: go on duty to see every open call, most urgent first, then acknowledge, take a call, mark yourself en route or on scene, and close it. The caller's handle is one click from Spectrum.
+- New Dispatch overlay module, on by default and silent until it matters: it shows your open beacon and how your crew is doing, or, on duty, the newest call. When your ship is destroyed it offers a rescue beacon for 30 seconds.
+- New Send beacon key in Settings, Keybindings: press it in game and the overlay asks, press again within 10 seconds and a rescue beacon goes out, with no need to leave the game. While the overlay is offering a rescue after a ship loss, one press sends it.
+- HorizonOS now asks UCI for your verified RSI handle when you sign in, so your crew can find you. If you signed in before this, Beacon offers to sign you in again; your beacon goes out either way.
+
 ## 0.3.0-ptb.51 — 2026-09-26
 
 - Command's suggestions now read as the command itself: "mute GUARD", "livery follow", "route Lorville", "track Iron". What you see is what Enter runs and what Tab fills in; the line under it explains. Typing stays free: "liver" lists every livery command, "take me to lorv" finds "route Lorville", "silence 1" finds "mute RADIO 1", and a bare name offers its main command. Radios go by the name on the Radio page, so "mute 1" is "mute RADIO 1".
