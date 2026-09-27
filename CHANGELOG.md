@@ -4,6 +4,37 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.51 — 2026-09-26
+
+- Command's suggestions now read as the command itself: "mute GUARD", "livery follow", "route Lorville", "track Iron". What you see is what Enter runs and what Tab fills in; the line under it explains. Typing stays free: "liver" lists every livery command, "take me to lorv" finds "route Lorville", "silence 1" finds "mute RADIO 1", and a bare name offers its main command. Radios go by the name on the Radio page, so "mute 1" is "mute RADIO 1".
+- Command controls your radios by the names you gave them: "mute Guard" silences one and keeps it tuned, "unmute Guard" brings it back at its volume, "turn off Guard" and "turn on Guard" switch it without losing its frequency, and "volume Guard 60" sets its volume. "tune Guard 121.5" and "radio Guard" take names too. Each can be undone for half a minute.
+- Each radio has a Mute button next to its power switch.
+- Your radios now live on the game PC's agent: after the agent restarts they come back tuned by themselves, and a radio switched off or muted from Command stays that way on every interface. The first time an interface connects, the radios it had set up are added to the agent's list.
+- Command takes its suggestions' own wording: typing "Wear the drake livery", "Switch to the Mining layout", "Hide the Comms panel" or "Tune radio 1 to 121.5 MHz" as written now runs it, and "wear drake" works too.
+- On Windows, Command now takes the keyboard from the game when it opens instead of saying Windows kept it there, as long as its key is a Ctrl, Alt or Shift combination or one of F13-F24. That key is then reserved on the whole PC while HorizonOS runs, and the game never sees it.
+- Command tracks ores: "track Iron" (or just "iron") stars it for the Mining panel, and "untrack Iron" or "stop tracking Iron" takes it off. Undo works for half a minute.
+- Your tracked ores now live on the agent, so a star set in Command, on the Mining page or on another computer's interface is the same everywhere. The first time an interface connects, the ores it had starred are added to the agent's list, so nothing you starred before is lost.
+- Command understands far more: it forgives typos ("lovrille" still finds Lorville), matches letters in order ("lgat" finds Lorville Gates), and highlights the letters that matched.
+- Command greys in the rest of the top suggestion as you type; press → or Tab to take it.
+- Every Command verb now suggests what can follow it: "layout" lists your layouts, "tune" your radios and recent frequencies, "livery" every livery, "hide" and "show" every panel, and "route" your recent destinations.
+- Command takes plain phrasing too: "take me to Levski", "set route to Area18", "switch to Mining", "clear the route". Type "?" or "help" to see every command with an example.
+- On Windows, key bindings that use Ctrl, Shift or Alt (Ctrl+K for Command, say) now work, as does binding Ctrl, Shift or Alt on its own; before, they never fired.
+- A Mining panel in the overlay shows the ores you starred on the Mining page, with the scan mass of each one's rock at ×1 to ×6 in columns, so a reading on your scanner names its rock without leaving the game. Ores found on the body you're on are green. It's on in the Mining layout.
+- Command: bind a key in Keybindings and press it in the game to open a bar over it. Type a place to route to it, "tune 121.5" or "tune 2 121.5" to tune a radio, "radio 2" to make it active, "layout Mining", "hide comms" or "livery drake"; Enter runs the top result and Esc closes.
+- Command remembers your last five commands and shows them, or a few examples, when you open it. What it changes can be undone from it for half a minute.
+- While Command is open, your push-to-talk and other keys do nothing, so typing can never key a radio, and a transmission that was on when you opened it ends.
+- The in-game overlay is now a set of panels you can each switch on or off and place in any of six positions: the four corners and the top and bottom centers.
+- Overlay layouts: Flying, Mining and Comms each remember their own panels, and Settings or a key of your choice switches between them.
+- A key of your choice hides the whole overlay and shows it again; a critical Starcomm Alert still shows while it is hidden.
+- The overlay wears your interface's livery, or one you pick for it alone in Settings.
+- Starcomm Alert has its own overlay panel, with a colored edge for how serious it is and when it ends.
+- The overlay uses the interface's typefaces, and its panels are easier to read over bright scenery.
+- The navigation panel only shows while you have a destination, instead of saying there is none.
+- A Comms panel in the overlay shows your active radio and frequency, lights up while you transmit, and names who is talking on any of your radios.
+- A Position panel shows where your last /showlocation put you: the nearest place, its body and how far away it is.
+- A Notices panel shows a line for a few seconds when you earn a blueprint, a radio is refused, Link Protocol drops or comes back, or you switch layouts.
+- Push-to-talk and the next and previous radio keys now all work when they are bound to keyboard keys at the same time; before, on Windows only the last one set would respond.
+
 ## 0.3.0-ptb.50 — 2026-09-26
 
 - Talk and Listen have their own limits, set by Link Protocol: up to 10 radios to talk on, 2 to listen on, and the Starcomm Alert receiver, so stations and nets you only monitor never take a radio you talk on. Each zone shows its own count and has its own Add button.
