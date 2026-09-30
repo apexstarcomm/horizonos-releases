@@ -4,6 +4,13 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.59 — 2026-09-30
+
+- Beacon lists your past beacons under the send form; open one to see how it went, who came, and its thread.
+- After "Send another beacon", Beacon stays on the send form when you come back to it, instead of showing the finished call again.
+- A beacon that ended any way but resolved now says how it ended, instead of showing every step as done.
+- Dispatch shows the caller's record on a call: how many of their past calls were resolved, cancelled or hoaxes, in amber when there was a hoax. On your own call, it shows your handle and your own record.
+
 ## 0.3.0-ptb.58 — 2026-09-30
 
 - HorizonOS now hears about a new version within minutes of its release, instead of up to six hours later, including on a laptop or tablet PC that runs HorizonOS without the Agent.
