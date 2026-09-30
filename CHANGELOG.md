@@ -4,6 +4,12 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.58 — 2026-09-30
+
+- HorizonOS now hears about a new version within minutes of its release, instead of up to six hours later, including on a laptop or tablet PC that runs HorizonOS without the Agent.
+- Using two PCs: when HorizonOS Agent on your gaming PC is on a newer version than HorizonOS, a message offers to update HorizonOS in one click. When the Agent is the one behind, or has an update waiting, HorizonOS offers to update the Agent from where you are, and the Agent reconnects by itself once it's done.
+- Settings, About now shows the version of HorizonOS you're running instead of "unversioned".
+
 ## 0.3.0-ptb.57 — 2026-09-30
 
 - Waypoint sets you follow now update on their own: when someone adds, removes, renames or deletes a waypoint in them, or you are let into or out of a set, the Waypoints page and the map show it within a second. If the notification service can't be reached, the Waypoints page checks your sets every minute while it is open.
