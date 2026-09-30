@@ -4,6 +4,15 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.56 — 2026-09-30
+
+- Installer: an update now closes HorizonOS Agent as well as HorizonOS before it replaces anything, instead of stopping halfway with a Retry box. If one of them can't be closed (for example, it was started as administrator), Setup says so and waits for you to quit it and choose Retry, or to cancel with nothing changed.
+- When a new version is ready, HorizonOS now says so inside the app, not only in a Windows notification: a message at the bottom of the window, with Update… taking you to Settings, About, to install it. Close it and it waits until the next time you open HorizonOS; a Starcomm Alert on screen goes first.
+- Installer: the progress bar moves with the work and ends full.
+- Downloads: releases no longer include a separate agent-cli.exe. The installer is the one download; choose HorizonOS Agent in it to install the Agent.
+- Installer: Setup remembers whether you installed HorizonOS, HorizonOS Agent or both. Updates now install only those, so a PC with HorizonOS alone no longer gets the Agent added and started after an update, and running Setup again starts from your current choice. Unchecking one there removes its files and shortcuts.
+- Installer: the last page now offers to start HorizonOS Agent and to create its desktop shortcut, next to the same two options for HorizonOS, showing only the ones for what you installed. With HorizonOS installed on its own, the page explains that HorizonOS needs the Agent running on the PC you play on.
+
 ## 0.3.0-ptb.55 — 2026-09-27
 
 - Keybinds: a key bound on its own and the same key with a modifier bound to another action now fire one action each. Pressing Ctrl+K used to trigger both K and Ctrl+K; a plain key still works while you hold a modifier the game uses, such as Shift to sprint, unless that exact combination is bound to something else.
