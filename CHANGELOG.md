@@ -4,6 +4,13 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.57 — 2026-09-30
+
+- Waypoint sets you follow now update on their own: when someone adds, removes, renames or deletes a waypoint in them, or you are let into or out of a set, the Waypoints page and the map show it within a second. If the notification service can't be reached, the Waypoints page checks your sets every minute while it is open.
+- Beacon and Dispatch now update the moment something changes, instead of up to 10 seconds later: your beacon when crew acknowledge, claim or message it, and the board, while you are on duty, when a call comes in or moves. If the notification service can't be reached, HorizonOS goes back to checking every 10 seconds.
+- When a new build comes out, HorizonOS notices within about ten minutes instead of up to six hours, so the update offer appears sooner. Installing is still always your click.
+- Starcomm Alerts now reach you the moment they are sent, instead of up to 15 seconds later, and a withdrawn alert disappears just as fast. If the alert service can't be reached, HorizonOS quietly goes back to checking every 15 seconds.
+
 ## 0.3.0-ptb.56 — 2026-09-30
 
 - Installer: an update now closes HorizonOS Agent as well as HorizonOS before it replaces anything, instead of stopping halfway with a Retry box. If one of them can't be closed (for example, it was started as administrator), Setup says so and waits for you to quit it and choose Retry, or to cancel with nothing changed.
