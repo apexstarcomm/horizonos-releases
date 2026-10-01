@@ -4,6 +4,17 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.60 — 2026-10-01
+
+- HorizonOS behaves like an app rather than a web page. The mouse's back and forward side buttons (and Alt+Left/Right) no longer page back through the surfaces you visited. Dragging across the window or pressing Ctrl+A no longer highlights labels and panels; text fields and share codes are still selectable. On Windows, right-clicking no longer opens the browser's Back/Refresh/Print menu, and browser shortcuts such as F5, Ctrl+P and Ctrl+Shift+I do nothing.
+- Drag a radio by its title bar to put it where you want it among your Talk or Listen radios, with the mouse, by touch or from the keyboard (focus the title bar, Space, the arrow keys, Space). The Agent keeps the order, so every device you use shows it, and next/previous radio goes through your radios in that order.
+- The Radio page's Talk and Listen headings no longer carry a line of explanation; hover or focus the ? beside each to read it.
+- The frequency list includes a Directory of public frequencies the Apex Starcomm operators recommend, such as trade and mining nets, each with where it's used and a short note on hover. It's a list of names only: a reserved channel's own rules always show instead of a directory entry on the same frequency.
+- The tune dialog has two views: Manual, for typing a frequency, and Browse, which lists every frequency HorizonOS knows (stations, reserved channels, your plans, presets and recent frequencies) in one list. A Listen radio opens on Browse and a Talk radio on Manual, and each remembers the view you last used.
+- A Frequencies button on the Radio page opens the same list before you choose a radio: pick a frequency and HorizonOS tunes the one radio that can take it, asks which when several can, or offers to add one when none can.
+- A long frequency list gets a search box (name, frequency or system) and filters for stations, reserved channels and your own; with one match left, Enter tunes it.
+- Stations show their logo: on the station's radio, beside its name, listener count and Website button, and in the tune dialog's Stations list. A station without a logo, or one whose image won't load, shows its initials instead.
+
 ## 0.3.0-ptb.59 — 2026-09-30
 
 - Beacon lists your past beacons under the send form; open one to see how it went, who came, and its thread.
