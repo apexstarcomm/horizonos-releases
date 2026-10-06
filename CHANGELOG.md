@@ -4,6 +4,11 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.61 — 2026-10-06
+
+- Screen readers now name each drop-down list in Settings after the setting it changes, such as Livery or Screen, instead of reading an unnamed list.
+- The in-game overlay's Comms panel names each radio as you named it on the Radio page, or RADIO 1, RADIO 2 for one you never named, instead of R0, R1.
+
 ## 0.3.0-ptb.60 — 2026-10-01
 
 - HorizonOS behaves like an app rather than a web page. The mouse's back and forward side buttons (and Alt+Left/Right) no longer page back through the surfaces you visited. Dragging across the window or pressing Ctrl+A no longer highlights labels and panels; text fields and share codes are still selectable. On Windows, right-clicking no longer opens the browser's Back/Refresh/Print menu, and browser shortcuts such as F5, Ctrl+P and Ctrl+Shift+I do nothing.
