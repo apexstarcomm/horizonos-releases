@@ -4,6 +4,10 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.62 — 2026-10-07
+
+- When a responder takes your Beacon call, or you take one as crew, HorizonOS offers a private encrypted radio for that call. Join it from the call, or press your Send beacon key twice in the game: it becomes your active radio, shows as CALL on the Radio page with its frequency and key locked, and goes when the call ends, putting back the radio it replaced if all ten were in use.
+
 ## 0.3.0-ptb.61 — 2026-10-06
 
 - Screen readers now name each drop-down list in Settings after the setting it changes, such as Livery or Screen, instead of reading an unnamed list.
