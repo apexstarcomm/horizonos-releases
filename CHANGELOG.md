@@ -4,6 +4,22 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.63 — 2026-10-11
+
+- Reset everything in Settings now really resets: waypoints, radios, pins, shortcuts and the Market and Mining filters are gone after it reloads, where before most of them came straight back. Your agent address and pairing stay. It, Sign out and Clear log now ask once before they act.
+- Switching push-to-talk between hold and toggle no longer strips a key combination such as Ctrl+K down to the plain key. The Radio page's transmit bar now follows the mode you picked in Settings instead of always holding.
+- Settings no longer lists three switches that did nothing: Reconnect automatically, Crowd layer refresh and Sharing.
+- The note at the foot of Settings now says whether a page is saved on this device or on the game PC.
+- Settings has a new layout: a title bar with a search box that jumps straight to a setting, a page for each area (Connection, Audio, Radio, Controls, In-game overlay, Star Map, Crowd data, Appearance, Account & stored data, About), and settings grouped in panels like the other pages. Each page has its own address, so Back and a reload stay where you were.
+- On the Audio, Controls and In-game overlay pages, controls are properly greyed out with a note and a Find an agent button when no agent is connected, instead of showing "———" switches that do nothing. A change you make shows "Saving…" until the game PC confirms it, and says so if it doesn't.
+- Settings switches are real on/off switches that screen readers name after the setting, and sliders are named too. Longer explanations moved behind a ? beside the setting's name. A setting you have changed on the Radio, Star Map, Crowd data and Appearance pages shows a Reset button that puts it back.
+- The overlay layout and the status colours are now drop-down lists, so more of either fits. The agent address checks what you typed and tells you what's wrong next to the field instead of in a pop-up.
+- You can bind a key to a lot more, on the new Controls page of Settings: push-to-talk or selecting each of your ten radios, muting the active radio or all of them, turning the active radio up or down, the previous overlay layout, showing or hiding each overlay panel, the next overlay colour, clearing your destination, undoing Command's last change, and joining a call radio in one press. The keys sit in groups, and the ten-radio keys start folded. They need an agent that has been updated.
+- A key for one radio's push-to-talk follows the same hold or toggle setting as the main push-to-talk key.
+- You can bind a button or hat on a joystick or HOTAS grip, such as a VKB or Virpil, to any of those actions, push-to-talk included. On Settings › Controls press Bind stick beside an action, then press the button on the stick; it counts down ten seconds and works with the stick plugged into the game PC, whichever device you are using HorizonOS on. It needs an agent that has been updated.
+- Controls lists the sticks the game PC can see, with a note on remapping tools: JoyToKey and AntiMicroX already work through the keys, a Joystick Gremlin vJoy device binds like any other, and HidHide needs agent-cli.exe and desktop.exe allowed.
+- Binding a key or stick button that another action already uses now asks first, and Move it here takes it from the other action. Before, the same key would have fired both.
+
 ## 0.3.0-ptb.62 — 2026-10-07
 
 - When a responder takes your Beacon call, or you take one as crew, HorizonOS offers a private encrypted radio for that call. Join it from the call, or press your Send beacon key twice in the game: it becomes your active radio, shows as CALL on the Radio page with its frequency and key locked, and goes when the call ends, putting back the radio it replaced if all ten were in use.
