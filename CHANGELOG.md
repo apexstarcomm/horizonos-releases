@@ -4,6 +4,10 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.65 — 2026-10-15
+
+- Opening HorizonOS on a PC that also has HorizonOS Agent installed now starts the Agent for you and connects to it, instead of asking you to pick an agent that is not running.
+
 ## 0.3.0-ptb.64 — 2026-10-12
 
 - HorizonOS now comes as a Linux AppImage too, built from the same tag as the Windows installer with every release, so both always have the same version and the same notes. It is the window only: it pairs with the agent running on your game PC, and updates itself from the same feed.
