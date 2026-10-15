@@ -4,6 +4,10 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.66 — 2026-10-15
+
+- When HorizonOS or the Agent cannot reach the update server at launch, it now tries again after a minute (then two, four, up to fifteen) instead of staying silent for hours, so the update notice no longer goes missing after one bad moment on the network.
+
 ## 0.3.0-ptb.65 — 2026-10-15
 
 - Opening HorizonOS on a PC that also has HorizonOS Agent installed now starts the Agent for you and connects to it, instead of asking you to pick an agent that is not running.
