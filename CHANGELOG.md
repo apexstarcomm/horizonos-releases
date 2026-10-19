@@ -4,6 +4,12 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.68 — 2026-10-19
+
+- HorizonOS now knows where you are when you land or dock, without running /showlocation: the top bar names the station, city or outpost the game log says you are at, and the Radio gets a position to work from at once.
+- A position from the game log is the place's, not yours, so it is shown by name and never offered as a spot to mark, report or calibrate with; /showlocation always wins, and a /showlocation reading more than ten minutes old is replaced by the place the log names.
+- When you take off, the position from the log goes away, since the log says nothing about where you are in flight.
+
 ## 0.3.0-ptb.67 — 2026-10-16
 
 - If your organization has its own band on Link, you can now talk and listen on it. Your organization's channels show up in the Radio's frequency list under an **Org** filter with the organization's name, and your organization's own list of frequencies appears there too. It follows what your organization sets up in Stratax, so a change to your rank or membership there takes effect within minutes, and nothing changes for players whose organization has no band.
