@@ -4,6 +4,11 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.69 — 2026-10-21
+
+- On Linux, first-run setup no longer suggests the Windows path to Game.log: it looks for your Star Citizen Wine or Proton prefix (Lutris, Heroic, Steam or a plain Wine prefix) and suggests that, or asks you to type one if it finds none.
+- Setup that cannot ask you a question, because HorizonOS was opened without a terminal, now stops with a message instead of quietly saving a path you never saw.
+
 ## 0.3.0-ptb.68 — 2026-10-19
 
 - HorizonOS now knows where you are when you land or dock, without running /showlocation: the top bar names the station, city or outpost the game log says you are at, and the Radio gets a position to work from at once.
