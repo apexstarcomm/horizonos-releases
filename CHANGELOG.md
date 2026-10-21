@@ -4,6 +4,14 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.70 — 2026-10-21
+
+- On Linux with Wayland, the overlay now opens on the screen at the corner of your screen layout, usually your main one, instead of whichever screen the desktop picked. Choosing a screen in Settings still wins.
+
+- The Linux AppImage now carries the agent, so opening HorizonOS on the machine that runs Star Citizen starts the agent for you instead of needing it launched by hand.
+
+- On Linux, HorizonOS now keeps its settings, sign-in and logs in ~/.config/horizonos/ instead of ~/.config/agent/. The first run of this build moves your existing folder across, so nothing needs setting up again.
+
 ## 0.3.0-ptb.69 — 2026-10-21
 
 - On Linux, first-run setup no longer suggests the Windows path to Game.log: it looks for your Star Citizen Wine or Proton prefix (Lutris, Heroic, Steam or a plain Wine prefix) and suggests that, or asks you to type one if it finds none.
