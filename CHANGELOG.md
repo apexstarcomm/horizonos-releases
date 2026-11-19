@@ -4,6 +4,12 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.71 — 2026-11-19
+
+- You are no longer signed out of UCI a couple of hours in, or right after an update; several parts of HorizonOS renewing your sign-in at the same moment no longer cancel each other, and being rate limited by UCI no longer ends your session.
+
+- A keybinding on a numpad key now fires whatever Num Lock is doing, so Shift with a numpad number works as a hotkey instead of acting like End, Home or an arrow key, and the arrow and navigation keys no longer fire bindings meant for the numpad.
+
 ## 0.3.0-ptb.70 — 2026-10-21
 
 - On Linux with Wayland, the overlay now opens on the screen at the corner of your screen layout, usually your main one, instead of whichever screen the desktop picked. Choosing a screen in Settings still wins.
