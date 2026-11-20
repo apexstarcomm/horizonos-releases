@@ -4,6 +4,48 @@ Newest build first. PTB builds are numbered `<next stable>-ptb.<build>`,
 one build counter that never resets; a stable is a PTB promoted as it was.
 The same notes appear on the update screen in the app when a build is offered.
 
+## 0.3.0-ptb.72 — 2026-11-20
+
+- The map's place and body cards list the contracts offered there, such as Nyx I's 503, with who gives each, its board, the standing it asks, what it pays when the game says and whether it is illegal; tap one for its briefing, and switch on unreleased contracts if you want to see those too.
+
+- The map's place and body cards now name the law that holds them, with its armistice law where it has one; Nyx I and every place on it read Ungoverned.
+
+- The map's body card says what weather a planet can have, such as Nyx I's snow and rain, clouds and lightning that strikes the ground, as the game files describe it; it is never a forecast.
+
+- The surface map reads each body's HD tiles with the game build they were cut from, so Nyx I's 5.0 tiles sit beside the others once published and are never drawn over a basemap of another build, and a body whose HD tiles are missing keeps its standard map without asking for them again on every move.
+
+- Nyx I carries a small "5.0 PTU" mark beside its name on the map, its body card, the universe list and an ore's page, because its places, rocks and life come from the Star Citizen 5.0 test build while the rest of the map is the live game.
+
+- The map's body card now lists what lives on Nyx I, its 28 plants and 4 creatures with how many of each roam together; its climate ranges wait until the game's units for them are confirmed.
+
+- Mining knows Star Citizen 5.0's rocks on Nyx I, which scan at half their 4.x twins' mass: an ore's page lists the rock on each soil or rock type it grows on with its density and size, the header gives both masses, the map's body card shows Nyx I's own, and Identify and the overlay's FOUND match a reading against the masses of the planet of your last /showlocation, showing both until you have one.
+
+- Nyx I's regions now show on the surface map as circles with their names, sectors at any zoom and clusters as you zoom in (Layers, Regions); search lists a site's region and finds sites by their region's name; and places that share a name are told apart by their region instead of their code, in Command's titles, search and the map card, wherever the region tells them apart.
+
+- A Star Citizen 5.0 site on Nyx I now has its own section on the map card: what it is and how big, its region, who holds it, whether it is a green zone and its rules, whether the game's starmap shows it, and its landing pads, medical beds, keycard doors by level, careerboards and turrets; the Unnamed sites switch and the "no quantum marker" line now follow the game's own starmap for these sites.
+
+- Nyx I's surface map now has a basemap of its own, its land, sea and relief from the Star Citizen 5.0 game files, with the height and water overlays, instead of a bare grid.
+
+- A body's air on the map's body card now reads each gas's share of the atmosphere as Atlas states it, so Nyx I's mix shows correctly and a thin trace such as Yela's oxygen is no longer shown as pure oxygen.
+
+- Mining's Identify sheet keeps every ore you track when the list is narrowed to a body that has none of them, such as Nyx I, instead of saying nothing is tracked.
+
+- When a scan reading fits two tracked ores, Identify and the overlay's FOUND now name both, such as "Quartz or Tin", and ask you to check the composition, instead of the overlay naming whichever ore you starred first.
+
+- The surface map now opens on a body's hubs and named places: sites with no quantum marker and a name many others share, such as Nyx I's Remote Locations and Campsites, sit behind one Unnamed sites switch in the filter, and still show when you search for, select or route to one.
+
+- A place with no quantum marker says so on its card, with the nearest place that has one and how far, or the orbital marker when the body has none, and the route strip quantum-travels you there before the last stretch.
+
+- A planet with many places in orbit, such as Nyx I with its terraformer platforms and ship graveyards, now shows one line per kind in the System view, which opens the planet, and labels each crowded kind once in the planet's own view instead of burying it in overlapping names.
+
+- Command tells apart places that share a name, such as Nyx I's hundreds of Remote Locations and Campsites: each is offered as its own command with the place's code after the name, a recent route goes back to the exact place it went to, and a place with a quantum marker comes first when two match equally.
+
+- Search results and the map's place card show the same code for a place whose name is shared on its body, and search no longer hides a place from Atlas just because a different place with the same name is loaded.
+
+- On a crowded body such as Nyx I, zooming into a region of the surface map now shows that region's places; the map used to draw the same few hundred markers wherever you looked, and a search now draws the matches in view and says how many are elsewhere.
+
+- Nyx I's terraformer platforms are drawn and filtered as stations, and its meteorite sites as natural features alongside caves and wildlife areas, instead of as unclassified places.
+
 ## 0.3.0-ptb.71 — 2026-11-19
 
 - You are no longer signed out of UCI a couple of hours in, or right after an update; several parts of HorizonOS renewing your sign-in at the same moment no longer cancel each other, and being rate limited by UCI no longer ends your session.
